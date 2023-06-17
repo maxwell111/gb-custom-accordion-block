@@ -1,2 +1,3 @@
-# gb-custom-accorion-block
-Custom Gutenberg plugin with accordion block
+## Description
+
+This plugin adds a custom Accordion block in the Gutenberg editor.
