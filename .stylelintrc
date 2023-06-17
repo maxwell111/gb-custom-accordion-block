@@ -1,0 +1,27 @@
+{
+    "extends": [
+        "stylelint-config-recommended-scss",
+        "stylelint-config-sass-guidelines"
+    ],
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-order"
+    ],
+    "ignoreFiles": [
+        "**/**/*.js",
+        "**/**/*.css"
+    ],
+    "rules": {
+        "declaration-empty-line-before": "never",
+        "max-nesting-depth": [
+            3,
+            {
+                "ignore": ["pseudo-classes"]
+            }
+        ],
+        "max-empty-lines": 1,
+        "string-quotes": "double",
+        "number-leading-zero": "never",
+        "indentation": [4]
+    }
+}

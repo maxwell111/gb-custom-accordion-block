@@ -1,0 +1,90 @@
+.accordion-editor {
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    &-item {
+        border: 1px solid #ddd;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        &-title {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .icon-plus,
+            .icon-minus {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                border-radius: 100%;
+                position: relative;
+                background: rgba(0, 0, 0, 0.87);
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    background: #fff;
+                }
+                &:before {
+                    top: 11px;
+                    left: 7px;
+                    width: 10px;
+                    height: 2px;
+                }
+                &:after {
+                    top: 7px;
+                    left: 11px;
+                    width: 2px;
+                    height: 10px;
+                    transition: all 0.35s ease-in-out;
+                }
+            }
+            .icon-minus {
+                &:after {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        &-heading {
+            margin: 0;
+            padding: 0;
+            span {
+                color: #222;
+            }
+        }
+        &-content {
+            padding: 10px 20px;
+            display: none;
+            align-items: flex-start;
+            border-top: 1px solid #ddd;
+            .content {
+                &-left,
+                &-right {
+                    flex: 1;
+                    align-self: stretch;
+                }
+                &-left {
+                    margin-right: 20px;
+                    border-right: 1px solid #eee;
+                }
+            }
+            &.active {
+                display: flex;
+            }
+        }
+    }
+    &-button-wrap {
+        &.align-right {
+            text-align: right;
+        }
+    }
+}
+
+.button {
+    &-wfull {
+        width: 100%;
+        justify-content: center !important;
+    }
+}
