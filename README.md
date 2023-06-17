@@ -12,3 +12,27 @@ This plugin adds a custom Accordion block in the Gutenberg editor.
 6. Alternative: 
    Go to plugin directory from terminal and Clone this repo in wp-content/plugins directory `git clone https://github.com/maxwell111/gb-custom-accorion-block.git`
    And then activate it from Plugins screen in your WordPress administrative dashboard.
+
+## Scripts
+
+```bash
+
+# install dependencies
+npm install
+
+# Hot reload for local development
+npm run dev
+
+# Lint your .js files in assets folder
+npm run lint
+
+# Formatting your styles in assets folder using Prettier
+npm run format_styles
+
+# Formatting your scripts in assets folder using Prettier
+npm run format_scripts
+
+# build for production with minification
+npm run build
+
+```
