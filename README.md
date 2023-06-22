@@ -2,6 +2,11 @@
 
 This plugin adds a custom Accordion block in the Gutenberg editor.
 
+## How it looks on page
+
+![image](https://github.com/maxwell111/gb-custom-accordion-block/assets/24935913/717bdaf8-5310-48b1-872d-ea5dc212c251)
+
+
 ## Installation
 
 1. Download the zipped plugin. Unzip the plugin.
