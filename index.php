@@ -63,7 +63,7 @@ function accordion_block_register() {
             $items = $attributes['items'] ?? null;
         
             ob_start();
-            require_once( 'src/templates/accordion-block.php');
+            include( 'src/templates/accordion-block.php');
             return ob_get_clean();
         
         },
