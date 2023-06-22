@@ -2,9 +2,9 @@
 /**
  * Accordion block template.
  *
- * @var string|null $title Title.
- * @var bool|null $firstItemExpanded First item expanded.
- * @var array|null $items Items.
+ * @var string  | null $title Title.
+ * @var bool    | null $firstItemExpanded First item expanded.
+ * @var array   | null $items Items.
  */
 
 ?>
@@ -21,7 +21,6 @@
         <div class="accordion-items">
             <?php foreach ( $items as $key => $item ) :
                 $iterator = $key + 1;
-                if ( ! empty( $item['heading'] ) && ! empty( $item['content'] ) && ! empty( $item['image'] ) ) :
                     ?>
                     <div class="accordion-item <?php echo ( $iterator === 1 ) && $firstItemExpanded ? 'active' : ''; ?>">
                         <div class="accordion-item-title">
@@ -42,7 +41,6 @@
                             </div>
                         </div>
                     </div>
-                <?php endif; ?>
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
